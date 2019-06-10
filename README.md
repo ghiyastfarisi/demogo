@@ -3,6 +3,7 @@
 Initial repository for Go based project
 
 features:
+- Folder structure based on https://github.com/golang-standards/project-layout
 - Optimized Dockerfile with multistage build
 - Docker development mode with auto restart
 - Go modules 
