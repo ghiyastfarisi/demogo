@@ -41,7 +41,7 @@ func router() {
 	}))
 
 	// enable custom middleware
-	r.Use(defaultMiddleware())
+	// r.Use(defaultMiddleware())
 
 	// Routes `api` group
 	// apiGroup := r.Group("/api")

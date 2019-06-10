@@ -16,13 +16,12 @@ var (
 
 // Init reading configuration file
 func Init() {
-	filepath := "development"
-	if Env != "development" && Env != "" {
-		filepath = Env
+	if Env == "" {
+		Env = "development"
 	}
-	viper.SetConfigName("conf")
-	viper.AddConfigPath(fmt.Sprintf("/etc/demogo/config/%s/", filepath))
-	viper.AddConfigPath(fmt.Sprintf(".%s/", filepath))
+	viper.SetConfigName(fmt.Sprintf("%s.conf", Env))
+	viper.AddConfigPath("/etc/demogo/configs/")
+	viper.AddConfigPath("./configs/file/")
 	if err := viper.ReadInConfig(); err != nil {
 		panic(fmt.Errorf("[ERR] Fatal error config file: %s", err))
 	}

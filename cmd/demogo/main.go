@@ -1,10 +1,11 @@
 package demogo
 
 import (
-	init "github.com/demogo/internal/init"
+	internalInit "github.com/ghiyastfarisi/demogo/internal/init"
 )
 
+// Main function entrypoint
 func Main() {
-	init.Init()
+	internalInit.Init()
 	router()
 }
