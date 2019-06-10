@@ -7,9 +7,9 @@ features:
 - Optimized Dockerfile with multistage build
 - Docker development mode with auto restart
 - Go modules 
-- HTTP handler with Gin
-- Built in HTTP middleware logger, cors & customizable middleware
-- Config management with viper and toml format
+- HTTP handler with [Gin](https://github.com/gin-gonic/gin)
+- Built in middleware logger, [cors](https://github.com/gin-contrib/cors) & customizable function
+- Config management with [viper](https://github.com/spf13/viper) and toml format
 
 upcoming features:
 - jwt generator & verifier
