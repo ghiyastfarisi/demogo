@@ -1,0 +1,9 @@
+[application]
+name = "demogo"
+version = "1.0"
+port = 1112
+
+[database.core]
+dsn = "postgres/core"
+port = 5432
+maxconnection = 1000

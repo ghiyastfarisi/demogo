@@ -3,12 +3,12 @@ package init
 import (
 	"log"
 
-	"github.com/ghiyastfarisi/demogo/configs"
+	internalConfig "github.com/ghiyastfarisi/demogo/internal/config"
 )
 
 // Init ...
 func Init() {
-	log.Println("[LOG] running init.go > Init()")
-	// initiate config
-	configs.Init()
+	log.Println("[LOG] Running pkg internal > init.go > Init()")
+	// initiate config file
+	internalConfig.Init()
 }
